@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDIT</title>
+  </head>
+  <body>
+    <h1>Edit page</h1>
+    <div>
+      <form action="/pokemon/<%=index%>?_method=PUT" method="POST">
+        <br />
+        Name:<input type="text" name="name" value="<%= pokemon.name %>" /><br />
+        Type:<input type="text" name="type" value="<%= pokemon.type %>" /><br />
+        HP:<input
+          type="number"
+          name="hp"
+          value="<%= pokemon.stats.hp %>"
+        /><br />
+        ATTK:<input
+          type="number"
+          name="attack"
+          value="<%= pokemon.stats.attack %>"
+        /><br />
+        DEF:<input
+          type="number"
+          name="defense"
+          value="<%= pokemon.stats.defense %>"
+        /><br />
+
+        <input type="submit" name="edit" value="Submit Edit" />
+      </form>
+    </div>
+  </body>
+</html>
