@@ -7,22 +7,22 @@
     <title>Tab Title</title>
 </head>
 <body >
-    <h1><%= Pokemon.name %></h1>
+    <h1><%= pokemon.name %></h1>
     <% let code = 'jpg' %>
-        <img src="<%=Pokemon.img %>" alt="photo-here">
-        <h2>Type: <%=Pokemon.type %></h2>
+        <img src="<%=pokemon.img %>" alt="photo-here">
+        <h2>Type: <%=pokemon.type %></h2>
         <h2>Stats</h2>
         <ul>
             <h3>
         
             <li">
-                HP: <%= Pokemon.stats.hp%></li>
+                HP: <%= pokemon.stats.hp%></li>
                     
             <li>
-                ATTK: <%= Pokemon.stats.attack %></li>
+                ATTK: <%= pokemon.stats.attack %></li>
                     
              <li>
-                DEF: <%= Pokemon.stats.defense %> </li>
+                DEF: <%= pokemon.stats.defense %> </li>
                
               </h3> 
         </ul>

@@ -11,22 +11,22 @@
     <div>
       <form action="/pokedex/<%=index%>?_method=PUT" method="POST">
         
-        Name:<input type="text" name="name" value="<%= pokemon.name %>" /><br />
-        Type:<input type="text" name="type" value="<%= pokemon.type %>" /><br />
+        Name:<input type="text" name="name" placeholder="<%= pokemon.name %>" /><br />
+        Type:<input type="text" name="type" placeholder="<%= pokemon.type %>" /><br />
         HP:<input
           type="number"
           name="hp"
-          value="<%= pokemon.stats.hp %>"
+          placeholder="<%= pokemon.stats.hp %>"
         /><br />
         ATTK:<input
           type="number"
           name="attack"
-          value="<%= pokemon.stats.attack %>"
+          placeholder="<%= pokemon.stats.attack %>"
         /><br />
         DEF:<input
           type="number"
           name="defense"
-          value="<%= pokemon.stats.defense %>"
+          placeholder="<%= pokemon.stats.defense %>"
         /><br />
 
         <br />
