@@ -8,7 +8,7 @@
   </head>
   <style>
     body{
-      background-color: rgb(57, 165, 248);
+      background-color: rgb(44, 126, 189);
     }
   </style>
   <body>
@@ -22,11 +22,11 @@
         <a href="/pokedex/<%= i%>"> <%= Pokemon[i].name %> </a>
         <img src="<%= Pokemon[i].img %>" />
 
-        <from action="/pokedex/<%= i; %>?_method=DELETE" method="POST">
-          <input type="submit" value="DELETE"
+        <from action="/pokedex/<%=i; %>?_method=DELETE" method="POST">
+          <input type="submit" value="DELETE"/>
         </from>
 
-        <a href type="/pokedex/<%=i; %>/edit">Edit</a>
+        <a href="/pokedex/<%=i; %>/edit/">Edit</a>
       </li>
       <% } %>
     </ul>
