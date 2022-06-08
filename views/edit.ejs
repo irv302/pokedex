@@ -9,8 +9,8 @@
   <body>
     <h1>Edit page</h1>
     <div>
-      <form action="/pokemon/<%=index%>?_method=PUT" method="POST">
-        <br />
+      <form action="/pokedex/<%=index%>?_method=PUT" method="POST">
+        
         Name:<input type="text" name="name" value="<%= pokemon.name %>" /><br />
         Type:<input type="text" name="type" value="<%= pokemon.type %>" /><br />
         HP:<input
@@ -29,7 +29,7 @@
           value="<%= pokemon.stats.defense %>"
         /><br />
 
-        <input type="submit" name="edit" value="Submit Edit" />
+        <input type="submit" name="" value="Submit changes" />
       </form>
     </div>
   </body>

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon</title>
   </head>
+  <style>
+    body{
+      background-color: rgb(57, 165, 248);
+    }
+  </style>
   <body>
     <h1>POKEMON!!!</h1>
     <nav>
@@ -14,7 +19,7 @@
     <ul>
       <% for(let i = 0; i < Pokemon.length; i++) { %>
       <li>
-        <a href="/poedex/<%= i%>"> <%= Pokemon[i].name %> </a>
+        <a href="/pokedex/<%= i%>"> <%= Pokemon[i].name %> </a>
         <img src="<%= Pokemon[i].img %>" />
 
         <from action="/pokedex/<%= i; %>?_method=DELETE" method="POST">

@@ -1,6 +1,6 @@
-const express = require("express");
+const express = require('express');
 const methodOverride = require('method-override');
-const Pokemon = require('/models/pokemon.js')
+const Pokemon = require('./models/pokemon.js')
 const pokemon = require('./models/pokemon')
 
 const app = express();
@@ -26,7 +26,7 @@ app.get('/pokedex/new', (req, res)=> {
     });
 
 
-app.delete('/pokedex/:id', (req, res) => {
+app.delete('/pokedex/', (req, res) => {
     pokemon.splice(req.params.id, 1);
     res.redirect('/pokedex');
     });
@@ -60,7 +60,7 @@ app.post('/pokemon', (req, res)=> {
 
 
 
- app.get('/pokedex/:id/', (req, res)=> {
+ app.get('/pokedex/:id/edit', (req, res)=> {
      res.render('show.ejs', {
          Pokemon: Pokemon[req.params.id] });
  });
